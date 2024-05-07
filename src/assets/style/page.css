@@ -1,0 +1,82 @@
+#app {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --men-primary-color: #002772;
+  --men-secondary-color: #d6e6ff;
+  --women-primary-color: #720060;
+  --women-secondary-color: #fde2ff;
+  --black-color: #1e1e1e;
+  --white-color: #ffffff;
+  --dark-gray-color: #3f3f3f;
+  --light-gray-color: #dcdcdc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background-men {
+  background-color: var(--men-secondary-color);
+}
+
+.background-women {
+  background-color: var(--women-secondary-color);
+}
+
+.background-unavailable {
+  background-color: var(--light-gray-color);
+}
+
+.background-color-men {
+  background-color: var(--men-primary-color);
+}
+
+.background-color-women {
+  background-color: var(--women-primary-color);
+}
+
+.text-color-men {
+  color: var(--men-primary-color);
+}
+
+.text-color-women {
+  color: var(--women-primary-color);
+}
+
+.text-color-unavailable {
+  color: var(--black-color);
+}
+
+.border-color-men {
+  border: 2px solid var(--men-primary-color);
+}
+
+.border-color-women {
+  border: 2px solid var(--women-primary-color);
+}
+
+.border-color-unavailable {
+  border: 2px solid var(--black-color);
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
